@@ -1,0 +1,196 @@
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid rgb(212, 209, 209);
+    box-shadow: 5px 5px 5px rgb(243, 239, 239);
+    z-index: 100;
+
+}
+
+.left-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hamberger-menu {
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+
+
+}
+
+.logo {
+    height: 20px;
+    cursor: pointer;
+}
+
+.middle-header {
+    flex: 1;
+    margin-left: 220px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar {
+    height: 33px;
+    flex: 1;
+    /* margin-top: 6px; */
+    font-size: 16px;
+    border-radius: 2px;
+    max-width: 400px;
+    padding-left: 15px;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(232, 226, 226);
+    flex-shrink: 0;
+    width: 0;
+    cursor: pointer;
+
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    border-color: aqua;
+}
+
+.search-button {
+    height: 37px;
+    width: 60px;
+    border-radius: 2px;
+    border-color: rgb(211, 204, 204);
+    border-style: solid;
+    margin-right: 8px;
+    background-color: rgb(232, 226, 226);
+    margin-left: -1px;
+    align-items: center;
+    padding-top: 4px;
+    cursor: pointer;
+
+
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-button .tooltip,
+.apps-button .tooltip,
+.dp-button .tooltip,
+.not-button .tooltip {
+    position: absolute;
+    background-color: rgb(240, 233, 233);
+    font-size: 14px;
+    font-family: Roboto, Arial;
+    border-radius: 2px;
+    margin-top: 5px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    flex: 1;
+    height: fit-content;
+
+
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-button:hover .tooltip,
+.apps-button:hover .tooltip,
+.dp-button:hover .tooltip,
+.not-button:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-search-button,
+.upload-button,
+.not-button,
+.apps-button,
+.dp-button {
+
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.search-image {
+    height: 24px;
+}
+
+.voice-image {
+    height: 24px;
+    width: 24px;
+
+}
+
+.right-header {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.upload {
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.apps {
+    height: 25px;
+    cursor: pointer;
+}
+
+.notification {
+
+    height: 25px;
+    cursor: pointer;
+}
+
+.notification_div {
+    position: relative;
+}
+
+.not_value {
+    background-color: rgb(174, 19, 19);
+    color: white;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: Roboto, Arial;
+}
+
+.dp {
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
